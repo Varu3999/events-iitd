@@ -1,0 +1,1 @@
+web: gunicorn eventsiitd.wsgi --log-file -
