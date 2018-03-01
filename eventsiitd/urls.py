@@ -18,11 +18,12 @@ from django.urls import path
 from django.conf.urls import include , url
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
-from . import settings
+from . import settings , views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('events/',include('event_handler.urls')),
+    url('^$',views.redir)
 ]
 
 # if settings.DEBUG:

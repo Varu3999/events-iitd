@@ -3,6 +3,7 @@ from .models import event , register ,sa
 from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail
+from django.shortcuts import HttpResponseRedirect
 
 # Create your views here.
 def events(request):
@@ -26,4 +27,5 @@ def events(request):
 
 
 
-
+def redir(request):
+    return HttpResponseRedirect('/events')
