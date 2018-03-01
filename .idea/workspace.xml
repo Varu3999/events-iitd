@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca6490e0-4d6d-4f86-b461-584c8593ed20" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventsiitd/settings.py" afterPath="$PROJECT_DIR$/eventsiitd/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event_handler/models.py" afterPath="$PROJECT_DIR$/event_handler/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,21 +75,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/event_handler/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+            <state relative-caret-position="150">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eventsiitd/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="121" column="3" lean-forward="false" selection-start-line="119" selection-start-column="2" selection-end-line="121" selection-end-column="3" />
+            <state relative-caret-position="470">
+              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding>
                 <element signature="e#313#322#0" expanded="true" />
               </folding>
@@ -155,7 +155,6 @@
         <option value="$PROJECT_DIR$/assets/events.css" />
         <option value="$PROJECT_DIR$/eventsiitd/urls.py" />
         <option value="$PROJECT_DIR$/eventsiitd/emailinfo.py" />
-        <option value="$PROJECT_DIR$/event_handler/models.py" />
         <option value="$PROJECT_DIR$/assets/css/events.css" />
         <option value="$PROJECT_DIR$/event_handler/admin.py" />
         <option value="$PROJECT_DIR$/event_handler/views.py" />
@@ -164,6 +163,7 @@
         <option value="$PROJECT_DIR$/eventsiitd/wsgi.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/eventsiitd/settings.py" />
+        <option value="$PROJECT_DIR$/event_handler/models.py" />
       </list>
     </option>
   </component>
@@ -198,36 +198,17 @@
             <path>
               <item name="eventsiitd" type="b2602c69:ProjectViewProjectNode" />
               <item name="eventsiitd" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventsiitd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventsiitd" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventsiitd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventsiitd" type="462c0819:PsiDirectoryNode" />
-              <item name="event_handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventsiitd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventsiitd" type="462c0819:PsiDirectoryNode" />
-              <item name="event_handler" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventsiitd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventsiitd" type="462c0819:PsiDirectoryNode" />
-              <item name="event_handler" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="event_handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eventsiitd" type="b2602c69:ProjectViewProjectNode" />
               <item name="eventsiitd" type="462c0819:PsiDirectoryNode" />
               <item name="eventsiitd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eventsiitd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eventsiitd" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -642,14 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/event_handler/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/event_handler/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -722,11 +695,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eventsiitd/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="121" column="3" lean-forward="false" selection-start-line="119" selection-start-column="2" selection-end-line="121" selection-end-column="3" />
+        <state relative-caret-position="470">
+          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding>
             <element signature="e#313#322#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event_handler/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

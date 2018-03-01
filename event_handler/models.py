@@ -8,7 +8,7 @@ class event(models.Model):
     time = models.TimeField()
     info = models.CharField(max_length=1000)
     venue = models.CharField(max_length=100)
-    image = models.FileField(null = True , blank=True)
+    image = models.URLField()
 
 
 
