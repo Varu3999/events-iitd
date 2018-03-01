@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>Events!</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Caveat+Brush|Handlee|Kaushan+Script|Krona+One|Orbitron|Permanent+Marker|Poiret+One" rel="stylesheet">
+    {% include 'event_handler/bootstrap.html'%}
+    <link rel="stylesheet" href="{% static '/css/events.css'%}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+
+<body>
+{% include 'event_handler/message.html'%}
+<div id="sa" style="font-family: 'Roboto Mono', monospace;">
+    <marquee behavior="scroll" direction="left"> {%for s in sa%}{{s.msg}} {%endfor%}</marquee>
+</div>
+<br>
+<h1 style="font-family: 'Krona One', sans-serif;text-align:center;font-size:60px">Events@<span style="font-family: 'Handlee', cursive;">IITD</span></h1>
+<br>
+<br>
+{%for event in events %}
+<!-- {{event.name}} -->
+<div class = "col-md-4" id ="image{{event.id}}" style="height: 300px;";>
+<img src="{{event.image.url}}" width = 90% height = 250px; style = "position: relative;left: 5%;">
+<div  class="onimg" id = "register{{event.id}}"  style="display: none;">
+  <br>
+  <h2 style="text-align:center;font-family: 'Bangers', cursive; color:#ffff33;">{{event.name}}</h2>
+  <button class="register" onclick=register({{event.id}})>Register</button>
+  <div id = "tag">
+    Venue:{{event.venue}}<br>
+    Date:{{event.date}}<br>
+    Time:{{event.time}}<br>
+  </div>
+</div>
+
+<!-- href="/events/register?event={{event.name}} " -->
+</div>
+<div class = "regformcon" id = "regformcon{{event.id}}">
+<div class = "regform" id = "regform{{event.id}}">
+  <form method = "POST" action="" style = "font-family: 'Orbitron', sans-serif;">{% csrf_token %}
+    <h1 style="text-align:center;font-family: 'Permanent Marker', cursive;font-size:60px;">Register!</h1>
+    <br>
+    <br>
+    <table>
+      <tr><td>Event:</td><td><input id = "event" name = "event" type="text" readonly value="{{event.name}}"></td></tr>
+      <tr><td>Email:</td><td><input id = "email" name = "email" type ="email" placeholder="email"></td></tr>
+      <tr><td>Name:</td><td><input id = "name" name = "name" type ="text" placeholder="Name"></td></tr>
+    </table>
+    <br>
+    <br>
+    <button id ="submit" type="submit">Confirm Email</button>
+
+  </form>
+<button id = "cancel" onclick=registerc({{event.id}})> Cancel </button>
+</div>
+</div>
+{% endfor %}
+<script type="text/javascript" src="{% static '/js/jquery.js'%}"> </script>
+<script type="text/javascript" src="{% static '/js/events.js'%}"> </script>
+</body>
+</html>
